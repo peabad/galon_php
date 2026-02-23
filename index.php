@@ -18,32 +18,14 @@ $revenue = $revRow['s'];
     <title>Document</title>
 </head>
 
-<body class="bg-light">
+<body style="background-color: #EEE8F5;">
     <?php include "nav.php";?>
 
-    <!-- <section id="home" class="hero">
+    <section id="projects" class="hero section-padding bg-light" style="background-color: #EEE8F5 !important;">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start">
-                <h1 class="display-4">Dashboard</h1>
-                <ul>
-                <li>Total Clients: <?php echo $clients; ?></li>
-                <li>Total Services: <?php echo $services; ?></li>
-                <li>Total Bookings: <?php echo $bookings; ?></li>
-                <li>Total Revenue: <?php echo number_format($revenue, 2); ?></li>
-                </ul>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="images/grad1.jfif" class="img-fluid border border-light rounded" style="max-width:350px;" alt="Profile">
-            </div>
-        </div>
-    </div>
-    </section> -->
-
-    <section id="projects" class="hero section-padding bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5 mt-3 display-1 lead">Dashboard ata</h2>
+        <h2 class="text-center mb-5 mt-3 display-1" style="color: #7545B0 !important;   ">Dashboard ata</h2>
         <div class="row">
+            
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
@@ -77,8 +59,8 @@ $revenue = $revRow['s'];
                 </div>
             </div>
             <p class ="text-center mt-4">
-            <button class="btn btn-primary" style ="text-decoration: none;" onclick="window.location.href='/ASSES/clients_add.php'">Add Client</button> |
-            <button class="btn btn-success" style ="text-decoration: none;" onclick="window.location.href='/ASSES/bookings_create.php'">Create Booking</button>
+            <button class="btn btn-primary " style ="text-decoration: none;" onclick="window.location.href='/ASSES/pages/clients-add.php'">Add Client</button> |
+            <button class="btn btn-success " style ="text-decoration: none;" onclick="window.location.href='/ASSES/bookings_create.php'">Create Booking</button>
             </p> 
     </section>
 
