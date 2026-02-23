@@ -25,7 +25,7 @@ if (isset($_POST['save'])) {
 <html>
 <head><meta charset="utf-8"><title>Add Client</title></head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<body>
+<body style="background-color: #EEE8F5 !important;"> 
 <?php include "../nav.php"; ?>
  
 <h2 class="text-center mb-5 mt-3 display-1">Add Client</h2>
@@ -58,7 +58,7 @@ if (isset($_POST['save'])) {
                 <input type="text" name="address" class="form-control">
             </div>
             <div class="mb-3 d-grid gap-2">
-                <button type="submit" name="save" class="btn btn-primary btn-lg btn-block">Save</button>
+                <button type="submit" name="save" class="btn btn-primary btn-lg btn-block" style="background-color: #53179C !important;">Save</button>
             </div>
         </div>
     </form>

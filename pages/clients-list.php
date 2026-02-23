@@ -9,7 +9,7 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id ASC");
   <title>Clients</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: #EEE8F5 !important;">
 <?php include "../nav.php"; ?>
 
 <div class="container mt-4">
@@ -19,7 +19,7 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id ASC");
       <?php if (mysqli_num_rows($result) > 0): ?>
         <div class="table-responsive">
           <table class="table table-striped table-hover">
-            <thead class="table-dark">
+            <thead class="table"style="color: #53179C !important;">
               <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
@@ -45,7 +45,7 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id ASC");
             </tbody>
           </table>
           <div class="text-end">
-          <a href="clients-add.php" class="btn btn-primary btn-lg">+ Add New Client</a>
+          <a href="clients-add.php" class="btn btn-primary btn-lg" style="background-color: #53179C !important;">+ Add New Client</a>
         </div>
         </div>
       <?php else: ?>

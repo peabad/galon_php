@@ -51,7 +51,7 @@ if (isset($_POST['update'])) {
   <title>Edit Client</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: #EEE8F5 !important;">
 <?php include "../nav.php"; ?>
 
 <div class="container">
@@ -87,7 +87,7 @@ if (isset($_POST['update'])) {
         </div>
         
         <div class="d-flex gap-2">
-          <button type="submit" name="update" class="btn btn-primary flex-grow-1">Update Client</button>
+          <button type="submit" name="update" class="btn btn-primary flex-grow-1" style="background-color: #53179C !important;">Update Client</button>
           <a href="clients-list.php" class="btn btn-secondary">Cancel</a>
         </div>
       </div>
