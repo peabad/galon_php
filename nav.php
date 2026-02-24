@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="/ASSES/pages/clients-list.php">Clients</a></li>
-                <li class="nav-item"><a class="nav-link" href="/ASSES/services_list.php">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="/ASSES/pages/services-list.php">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="/ASSES/bookings_list.php">Bookings</a></li>
                 <li class="nav-item"><a class="nav-link" href="/ASSES/tools_list_assign.php">Tools</a></li>
                 <li class="nav-item"><a class="nav-link" href="/ASSES/payments_list.php">Payments</a></li>

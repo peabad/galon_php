@@ -2,13 +2,10 @@
 include "../db.php";
  
 $id = $_GET['id'];
- 
-// Added mysqli_real_escape_string for security
 $id = mysqli_real_escape_string($conn, $id);
 $get = mysqli_query($conn, "SELECT * FROM clients WHERE client_id = $id");
 $client = mysqli_fetch_assoc($get);
  
-// Check if client exists
 if (!$client) {
     header("Location: clients-list.php");
     exit;
@@ -25,7 +22,6 @@ if (isset($_POST['update'])) {
   if ($full_name == "" || $email == "") {
     $message = "Name and Email are required!";
   } else {
-    // Added mysqli_real_escape_string to prevent SQL injection
     $full_name = mysqli_real_escape_string($conn, $full_name);
     $email = mysqli_real_escape_string($conn, $email);
     $phone = mysqli_real_escape_string($conn, $phone);
@@ -44,6 +40,7 @@ if (isset($_POST['update'])) {
   }
 }
 ?>
+
 <!doctype html>
 <html>
 <head>
