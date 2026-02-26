@@ -1,5 +1,5 @@
 <?php
-include "../config/db.php";
+include "../db.php";
  
  
 $booking_id = $_GET['booking_id'];
@@ -59,34 +59,42 @@ if (isset($_POST['pay'])) {
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-<?php include "../components/nav.php"; ?>
+<?php include "../nav.php"; ?>
  
- 
-<h2>Process Payment (Booking #<?php echo $booking_id; ?>)</h2>
- 
- 
+<div class="container">
+ <div class="mx-auto card shadow mb-5 mt-5" style="width: 26rem;">
+    <div class="card-body">
+      <h2>Process Payment (Booking #<?php echo $booking_id; ?>)</h2>
+      
+    <?php if ($message != ""): ?>
+      <div class="alert alert-danger m-3" role="alert">
+        <?php echo $message; ?>
+      </div>
+    <?php endif; ?>
+
 <p>Total Cost: ₱<?php echo number_format($booking['total_cost'],2); ?></p>
 <p>Total Paid: ₱<?php echo number_format($total_paid,2); ?></p>
 <p><b>Balance: ₱<?php echo number_format($balance,2); ?></b></p>
- 
- 
-<p style="color:red;"><?php echo $message; ?></p>
+
+<hr>
  
  
 <form method="post">
-  <label>Amount Paid</label><br>
-  <input type="number" name="amount_paid" step="0.01"><br><br>
+  <div class="card-body">
+  <label class="form-label">Amount Paid</label><br>
+  <input type="number" class="form-control" name="amount_paid" step="0.01"><br>
  
  
   <label>Method</label><br>
-  <select name="method">
+  <select class="form-select" name="method">
     <option value="CASH">CASH</option>
     <option value="GCASH">GCASH</option>
     <option value="CARD">CARD</option>
   </select><br><br>
  
- 
-  <button type="submit" name="pay">Save Payment</button>
+ <div class="d-flex gap-2">
+  <button type="submit" name="pay" class="btn btn-primary flex-grow-1" style="background-color: #53179C;">Save Payment</button>
+  <a href="services-list.php" class="btn btn-secondary">Cancel</a>
 </form>
  
  

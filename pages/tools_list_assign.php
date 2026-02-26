@@ -85,7 +85,7 @@ $bookings = mysqli_query($conn, "SELECT booking_id FROM bookings ORDER BY bookin
   <label>Qty Used</label><br>
   <input type="number" class ="form-control" name="qty_used" min="1" value="1"><br><br>
   <div class="text-end">
-  <button  class="btn btn-primary btn-lg" style="background-color: #53179C !important;" type="submit" name="assign">‎ ‎ASSIGN ‎  ‎</button>
+  <button  class="btn btn-primary btn-lg" style="background-color: #53179C !important;" type="submit" name="assign">‎‎ASSIGN‎‎</button>
 
 </form>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

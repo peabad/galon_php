@@ -16,13 +16,24 @@ $result = mysqli_query($conn, $sql);
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
 <body style="background-color: #EEE8F5 !important;">
 <?php include "../nav.php"; ?>
- 
-<h2>Payments</h2>
- 
-<table border="1" cellpadding="8">
-  <tr>
-    <th>ID</th><th>Client</th><th>Booking ID</th><th>Amount</th><th>Method</th><th>Date</th>
-  </tr>
+
+<div class="container mt-4">
+<h2 class="text-center mb-5 mt-3 display-1">Payments</h2>
+ <div class="card shadow mx-auto" style="max-width: 1200px;">
+    <div class="card-body">
+<div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead class="table"style="color: #53179C !important;">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Client</th>
+              <th scope="col">Booking ID</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Method</th>
+              <th scope="col">Date</th>
+            </tr>
+            </thead>
+          <tbody>
   <?php while($p = mysqli_fetch_assoc($result)) { ?>
     <tr>
       <td><?php echo $p['payment_id']; ?></td>
@@ -34,6 +45,6 @@ $result = mysqli_query($conn, $sql);
     </tr>
   <?php } ?>
 </table>
- 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
