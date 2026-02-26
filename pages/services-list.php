@@ -7,7 +7,7 @@ $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id ASC");
 <head><meta charset="utf-8"><title>Services</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: #EEE8F5 !important;">
 <?php include "../nav.php"; ?>
  
 <div class="container mt-4">
@@ -32,7 +32,7 @@ $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id ASC");
                         <td><?php echo $row['service_name']; ?></td>
                         <td>₱<?php echo number_format($row['hourly_rate'],2); ?></td>
                         <td><?php echo $row['is_active'] ? "Yes" : "No"; ?></td>
-                        <td><a href="services-edit.php?id=<?php echo $row['service_id']; ?>" class="btn btn-sm btn-warning">Edit</a></td>
+                        <td><a href="services-edit.php?id=<?php echo $row['service_id']; ?>" class="btn btn-sm btn-info">Edit</a></td>
                         </tr>
                     <?php } ?>
                     </tbody>

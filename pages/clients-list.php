@@ -38,7 +38,7 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id ASC");
                   <td><?php echo htmlspecialchars($row['phone']); ?></td>
                   <td><?php echo htmlspecialchars($row['address']); ?></td>
                   <td>
-                    <a href="clients-edit.php?id=<?php echo $row['client_id']; ?>" class="btn btn-sm btn-warning">Edit</a>
+                    <a href="clients-edit.php?id=<?php echo $row['client_id']; ?>" class="btn btn-sm btn-success">Edit</a>
                   </td>
                 </tr>
               <?php } ?>

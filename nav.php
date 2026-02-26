@@ -11,9 +11,9 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="/ASSES/pages/clients-list.php">Clients</a></li>
                 <li class="nav-item"><a class="nav-link" href="/ASSES/pages/services-list.php">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="/ASSES/bookings_list.php">Bookings</a></li>
-                <li class="nav-item"><a class="nav-link" href="/ASSES/tools_list_assign.php">Tools</a></li>
-                <li class="nav-item"><a class="nav-link" href="/ASSES/payments_list.php">Payments</a></li>
+                <li class="nav-item"><a class="nav-link" href="/ASSES/pages/bookings-list.php">Bookings</a></li>
+                <li class="nav-item"><a class="nav-link" href="/ASSES/pages/tools_list_assign.php">Tools</a></li>
+                <li class="nav-item"><a class="nav-link" href="/ASSES/pages/payments_list.php">Payments</a></li>
             </ul>
         </div>
     </div>
