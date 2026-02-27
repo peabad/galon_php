@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+
 include "db.php";
 $clients = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM clients"))['c'];
 $services = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM services"))['c'];
@@ -23,7 +30,7 @@ $revenue = $revRow['s'];
 
     <section id="projects" class="hero section-padding bg-light" style="background-color: #EEE8F5 !important;">
     <div class="container">
-        <h2 class="text-center mb-5 mt-3 display-1" style="color: #7545B0 !important;   ">Dashboard ata</h2>
+        <h2 class="text-center mb-5 mt-3 display-1" style="color: #7545B0 !important;   ">Welcome to the Dashboard, <?php echo $_SESSION['username']; ?>.</h2>
         <div class="row">
             
             <div class="col-md-4">

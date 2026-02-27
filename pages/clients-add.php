@@ -29,7 +29,6 @@ if (isset($_POST['save'])) {
 <?php include "../nav.php"; ?>
  
 <h2 class="text-center mb-5 mt-3 display-1">Add Client</h2>
- 
   <div class="mx-auto card shadow mb-10" style="width: 26rem;">
     <?php if ($message != ""): ?>
     <div class="alert alert-danger m-3" role="alert">
